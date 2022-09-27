@@ -1,0 +1,51 @@
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-duration: 250ms;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .gallery__item {
+
+  }
+  
+  .gallery__image:hover {
+    transform: scale(1.03);
+  }
+  
+  .gallery__image {
+    transition: transform var(--animation-duration) var(--timing-function);
+  }
+  
+  .gallery__link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+  }
+  
+  .gallery__link:hover {
+    cursor: zoom-in;
+  }
+
+  .info-item {
+    display: flex;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-around;
+    width: 600px;
+  }
+
+  .info-name{
+    margin-right: 5px;
+  }
+  
+  
+
+  
