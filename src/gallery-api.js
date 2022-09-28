@@ -1,6 +1,6 @@
 
 import axios from "axios"
-axios = require('axios').default;
+// axios = require('axios').default;
 
 export default class GalleryApi {
 constructor(){
