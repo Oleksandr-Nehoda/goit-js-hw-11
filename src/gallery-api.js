@@ -5,6 +5,7 @@ export default class GalleryApi {
 constructor(){
     this.valueInput = ' ';
     this.page = 1;
+    this.per_page = 40;
 }
 
 async catchImg() {
@@ -18,7 +19,7 @@ async catchImg() {
           orientation : 'horizontal',
           safesearch : true,
           page: this.page, 
-          per_page: 5,
+          per_page: this.per_page,
         }
       })
 
