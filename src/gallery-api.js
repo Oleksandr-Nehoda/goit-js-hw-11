@@ -1,5 +1,6 @@
 
-
+import axios from "axios"
+axios = require('axios').default;
 
 export default class GalleryApi {
 constructor(){
@@ -9,7 +10,7 @@ constructor(){
 }
 
 async catchImg() {
-    axios = require('axios').default;
+    
     try {
       const response = await axios.get('https://pixabay.com/api', {
         params: {
