@@ -11,7 +11,7 @@ constructor(){
 async catchImg() {
     
     try {
-      const response = await axios.get('https://pixabay.com/api', {
+      const response = await axios.get('https://pixabay.com/api/', {
         params: {
           key: '30183064-85bc7a0e48281dabc89ef1428',
           q : this.valueInput,
