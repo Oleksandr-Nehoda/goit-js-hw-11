@@ -3,6 +3,7 @@ import GalleryApi from './gallery-api';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const refs = {
     searchForm: document.querySelector('#search-form'),
     gallery: document.querySelector('.gallery'),
@@ -67,8 +68,6 @@ function onOpenLightbox(event) {
         captionDelay: '250',   
  });
  lightbox.refresh();
-
-
 }
 
 function createMarkupCard (webformatURL, largeImageURL, tags, likes, views, comments, downloads) {
